@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — NPTE Prep App</title>
+  <title>Privacy Policy — Cadence</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -43,12 +43,12 @@
   <div class="container">
     <div class="card">
       <h1>Privacy Policy</h1>
-      <p class="subtitle">NPTE Prep App &mdash; Physical Therapy Board Exam Preparation</p>
-      <p class="updated">Last updated: May 3, 2025</p>
+      <p class="subtitle">Cadence &mdash; NPTE Board Prep</p>
+      <p class="updated">Last updated: June 7, 2026</p>
 
       <h2>Overview</h2>
       <p>
-        NPTE Prep App ("the App," "we," "our") is an iOS application designed to help physical
+        Cadence ("the App," "we," "our") is an iOS application designed to help physical
         therapy students prepare for the National Physical Therapy Examination (NPTE). We are
         committed to protecting your privacy. This policy explains what information is collected,
         how it is used, and your rights as a user.
@@ -56,45 +56,70 @@
 
       <h2>Information We Collect</h2>
 
-      <p><strong>1. Subscription and Purchase Data</strong></p>
+      <p><strong>1. Sign in with Apple</strong></p>
+      <p>
+        The App uses Sign in with Apple as its only authentication method. When you sign in,
+        Apple may share your name and email address (or an anonymized relay address) with the
+        App depending on the permissions you grant. This information is used solely to
+        personalize your experience within the App. We do not store your Apple ID credentials
+        and we do not use this information for advertising or share it with third parties.
+      </p>
+
+      <p><strong>2. Subscription and Purchase Data</strong></p>
       <p>
         When you subscribe through the App, Apple processes your payment and manages your
         subscription. We receive only the information Apple provides to confirm your subscription
-        status (active, expired, or in trial). We do not collect or store your name, email address,
-        credit card number, or any other billing information. All billing is handled exclusively
-        by Apple under their
+        status (active, expired, or in trial). We do not collect or store your credit card
+        number or any other billing information. All billing is handled exclusively by Apple
+        under their
         <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a>.
       </p>
 
-      <p><strong>2. Study Performance Data (stored on-device only)</strong></p>
+      <p><strong>3. Study Performance Data</strong></p>
       <p>
         All study data generated within the App &mdash; including quiz answers, diagnostic results,
-        flashcard ratings, readiness scores, streaks, and study plans &mdash; is stored exclusively
-        on your device using iOS local storage (UserDefaults). This data is:
+        flashcard ratings, readiness scores, streaks, and study plans &mdash; is stored on your
+        device using iOS local storage and optionally synced to your private iCloud account
+        (see iCloud Sync below). This data is:
       </p>
       <ul>
-        <li>Never transmitted to our servers (we do not operate a backend server).</li>
-        <li>Not linked to your identity or Apple ID by us.</li>
+        <li>Not linked to your identity by us.</li>
         <li>Not shared with any third party by us.</li>
-        <li>Included in your device's local encrypted backup if you use iCloud Backup or iTunes Backup, which is governed by Apple's privacy policy.</li>
+        <li>Never used for advertising purposes.</li>
       </ul>
 
-      <p><strong>3. AI Tutor Messages (optional feature)</strong></p>
+      <p><strong>4. iCloud Sync</strong></p>
       <p>
-        The App includes an optional AI Tutor powered by Anthropic's Claude API. This feature
-        requires you to supply your own Anthropic API key, which is stored securely in your
-        device's iOS Keychain and is never transmitted to us. If you use the AI Tutor:
+        If you are signed into iCloud on your device, the App uses Apple's CloudKit framework
+        to sync your study progress, spaced repetition card states, study plan, and diagnostic
+        results across your devices via your private iCloud database. This data is:
       </p>
       <ul>
-        <li>Your messages and the question context are sent directly from your device to Anthropic's servers at <code>api.anthropic.com</code>.</li>
-        <li>This data is governed by <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.</li>
-        <li>We do not receive, log, or store your AI Tutor conversations.</li>
-        <li>The AI Tutor is entirely optional. The App is fully functional without it.</li>
+        <li>Stored in your personal, private iCloud database — only you can access it.</li>
+        <li>Never accessible to us or any third party.</li>
+        <li>Governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
       </ul>
+
+      <p><strong>5. Push Notifications</strong></p>
+      <p>
+        The App may send push notifications to remind you to study or alert you to streak
+        milestones. Notifications are delivered via Apple Push Notification service (APNs).
+        We do not collect or store device tokens beyond what is required to deliver
+        notifications. You can disable notifications at any time in iOS Settings.
+      </p>
+
+      <p><strong>6. Game Center</strong></p>
+      <p>
+        The App optionally integrates with Apple Game Center to power XP leaderboards.
+        If you choose to enable Game Center, your XP score and Game Center display name
+        will be visible to other players on the leaderboard. Game Center data is governed
+        by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.
+        Game Center participation is optional and can be skipped during onboarding.
+      </p>
 
       <h2>Information We Do Not Collect</h2>
       <ul>
-        <li>Your name, email address, or any account credentials (there is no account system).</li>
+        <li>Credit card numbers or billing information (handled entirely by Apple).</li>
         <li>Device identifiers, advertising IDs, or location data.</li>
         <li>Crash logs or analytics events (no third-party analytics SDK is used).</li>
         <li>Any data used for advertising or cross-app tracking.</li>
@@ -113,14 +138,15 @@
         described below:
       </p>
       <ul>
-        <li><strong>Apple:</strong> Subscription and purchase transactions are handled by Apple.</li>
-        <li><strong>Anthropic:</strong> Only if you choose to use the optional AI Tutor feature and enter your own API key.</li>
+        <li><strong>Apple:</strong> Authentication (Sign in with Apple), subscription/purchase transactions, iCloud sync, push notifications, and Game Center leaderboards are all handled by Apple.</li>
       </ul>
 
       <h2>Data Retention and Deletion</h2>
       <p>
-        All study data lives on your device. You can delete it at any time by deleting the
-        App from your device. There is no server-side data to request deletion of.
+        All study data lives on your device and in your private iCloud account. You can
+        delete it at any time by deleting the App from your device. To remove iCloud data,
+        go to <strong>Settings &rarr; [Your Name] &rarr; iCloud &rarr; Manage Account Storage</strong>
+        and delete the App's data.
       </p>
       <p>
         To cancel your subscription, go to <strong>Settings &rarr; Apple ID &rarr; Subscriptions</strong>
@@ -150,7 +176,7 @@
     </div>
 
     <footer>
-      &copy; 2025 NPTE Prep App. All rights reserved.
+      &copy; 2026 Derrick Hutchinson. All rights reserved.
     </footer>
   </div>
 </body>
